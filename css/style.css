@@ -1,10 +1,20 @@
+
+li {
+  list-style: none;
+}
+
 .header {
   list-style-type: none;
-  margin: 10px;
+  margin-top: 10px;
   overflow: hidden;
   margin-right: 16px;
   font-family: arial,sans-serif;
   font-size: 13px;
+}
+
+.header li {
+  display: flex;
+  float: right;
 }
 
 .headerli a {
@@ -33,11 +43,12 @@
   height: 44px;
   margin: 0 auto;
   margin-top: -77px;
-  width: 582px;
+  width: 585px;
+  border-radius: 50px;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1), 0 -2px 5px 0 rgba(0,0,0,0.1);
 }
 
 .search {
@@ -79,6 +90,17 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   line-height: 34px;
   height: 34px !important;
   display: block;
+  position: relative;
+}
+
+.voice {
+  cursor: pointer;
+  align-items: center;
+  padding: 0 8px;
+  width: 24px;
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .input {
@@ -102,9 +124,20 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  border: none;
+  width: 480px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .googlesearch {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
   line-height: 27px;
@@ -112,20 +145,27 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  color: #5f6368;
+  border: 1px solid #f2f2f2;
 }
 
 .feelinglucky {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   padding: 0 16px;
   line-height: 27px;
   min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
+  color: #5f6368;
+  border: 1px solid #f2f2f2;
 }
 
 .footer {
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
   overflow: hidden;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
